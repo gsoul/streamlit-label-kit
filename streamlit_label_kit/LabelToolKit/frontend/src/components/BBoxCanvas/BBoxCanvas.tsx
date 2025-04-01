@@ -76,6 +76,7 @@ export const BBoxCanvas = (props: BBoxCanvasLayerProps) => {
 
       switch (e.key) {
         case "Delete":
+        case "Backspace":
           rects = rects.filter((_, idx) => idx !== index);
           setSelectedId(null);
           break;
